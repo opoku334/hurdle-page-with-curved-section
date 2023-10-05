@@ -1,0 +1,256 @@
+:root{
+    --pink:hsl(322,100%,66%);
+    --light-pink:hsl(321,100%,78%);
+    --light-red:hsl(0,100%,63%);
+    --dark-cyan:hsl(192,100%,9%);
+    --pale-blue:hsl(207,100%,98%);
+    box-sizing: border-box;
+    /* font-size: calc(0.6em + 0.6vw); */
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-size: 1em;
+}
+::before,::after,*{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+.container > *+*{
+    margin-top: 5em;
+}
+
+
+.container{
+    max-width: 1080px;
+    width: 90%;
+
+    margin: 3em auto;
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: calc(0.6em + 0.6vw);
+
+}
+.logo img,.footer img{
+    width: 7em;
+}
+img{
+    max-width: 100%;
+}
+.try{
+    margin-left: auto;
+
+    padding: 0.3em 1.5em;
+    border: 1px solid var(--light-pink);
+    border-radius: 1em;
+    color: var(--dark-cyan);
+
+
+}
+.try:hover{
+    color: var(--light-pink);
+}
+
+.body-text{
+    text-align: center;
+    
+}
+.body-text>*+*{
+    margin-top: 2em;
+}
+.body-button{
+    color:var(--pale-blue);
+    background-color: var(--pink);
+    padding: 0.8em 2em;
+    border-radius: 2em;
+    
+}
+.body-button:hover{
+    background-color: var(--light-pink);
+}
+.body-image,.curved-section{
+    text-align: center;
+}
+
+.achivements{
+    display: grid;
+    margin-top: 2em;
+    gap: 3em;
+}
+.achivements h1{
+    font-size: 3em ;
+    font-weight: bold;
+}
+.curved-section> *+*{
+    margin-top: 5em;
+}
+
+.body-image .achivements img{
+
+    width: 2em;
+    text-align: start;
+    margin-right: 5em;
+}
+
+.grow-together,.flowing-conversation,.your-users{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+
+    padding: 3em;
+
+}
+.grow-together,.your-users{
+    
+    background-color: var(--pale-blue);
+}
+.build-community{
+    text-align: center;
+
+}
+.build-community>*+*{
+    margin-top: 1.8em;
+}
+
+.bg-site{
+    margin-bottom: -0.3em;
+}
+
+
+.footer{
+    /* Add the background color to match the image color
+ */
+    color:white;
+    
+    /* font-size: calc(0.6em + 0.6vw); */
+    max-width: 1080px;
+    margin: 0 auto;
+    width: 80%;
+    padding-top:2em;
+
+
+}
+footer section{
+    background-color: var(--dark-cyan);
+
+}
+
+.footer{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10em;
+}
+.footer-info> *+*{
+    margin-top: 1.5em;
+}
+.footer-image{
+    font-size: calc(0.6em + 0.6vw);
+}
+.footer-image img{
+    width: 7em;
+}
+
+.footer-address,.footer-socials{
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    padding: 0.7em 0;
+}
+.footer-address img ,.footer-socials img{
+    width: 1.5rem;
+}
+form *+*{
+    margin-top: 2em;
+}
+
+form input[type='email']{
+    display: block;
+    width: 100%;
+    padding: 0.8em;
+
+}
+form input[type='submit']{
+    background-color: var(--pink);
+    border-radius: 0.5em;
+    display: block;
+    margin-left: auto;
+    padding: 0.8em 3em;
+    color:white;
+    border: none;
+}
+.submit:hover{
+    background-color: var(--light-pink);
+}
+
+
+
+.attribution{
+    text-align: center;
+    color: white;
+    padding: 1em 0;
+}
+.attribution a{
+    color: gray;
+}
+@media screen and (min-width:768px) {
+    
+    .body-text p{
+        max-width: 40%;
+        margin: 2em auto;
+        
+    }
+    .flowing-conversation{
+        flex-direction: row;
+        align-items: center;
+        line-height: 2;
+
+    }
+    .grow-together,.your-users{
+        flex-direction: row-reverse;
+        align-items: center;
+        text-align: start;
+        line-height: 2;
+    }
+
+    .curved-section p{
+        font-size: 1.2em;
+    }
+  
+   
+
+    .achivements{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footer{
+        flex-direction: row;
+        justify-content: space-evenly;
+   
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+   
+    .inputs{
+        display: flex;
+        gap: 1em;
+    
+
+    }
+    form input[type='submit']{
+        margin-top: 0;
+    }
+
+    
+  
+}
+
